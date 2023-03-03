@@ -32,32 +32,45 @@ export const Portfolio = () => {
   };
 
   return (
-    <div className="flex items-center w-full">
-      <button onClick={() => setPosition(position + projects.length - 1)}>
-        <FontAwesomeIcon
-          icon={faLongArrowAltLeft}
-          className="text-gray-300 hover:text-gray-400 p-[20px] pl-0"
-        />
-      </button>
+    <div>
+      <div className="flex items-center w-full">
+        <button onClick={() => setPosition(position + projects.length - 1)}>
+          <FontAwesomeIcon
+            icon={faLongArrowAltLeft}
+            className="text-gray-300 hover:text-gray-400 p-[20px] pl-0"
+          />
+        </button>
 
-      <div className="flex space-x-[30px]">
-        <div>
-          <Project data={projects[getIndex(position)]} />
+        <div className="flex space-x-[30px]">
+          <div>
+            <Project data={projects[getIndex(position)]} />
+          </div>
+          <div className="hidden md:inline">
+            <Project data={projects[getIndex(position + 1)]} />
+          </div>
+          <div className="hidden xl:inline">
+            <Project data={projects[getIndex(position + 2)]} />
+          </div>
         </div>
-        <div className="hidden md:inline">
-          <Project data={projects[getIndex(position + 1)]} />
-        </div>
-        <div className="hidden xl:inline">
-          <Project data={projects[getIndex(position + 2)]} />
-        </div>
+
+        <button onClick={() => setPosition(position + 1)}>
+          <FontAwesomeIcon
+            icon={faLongArrowAltRight}
+            className="text-gray-300 hover:text-gray-400 p-[20px] pr-0"
+          />
+        </button>
       </div>
-
-      <button onClick={() => setPosition(position + 1)}>
-        <FontAwesomeIcon
-          icon={faLongArrowAltRight}
-          className="text-gray-300 hover:text-gray-400 p-[20px] pr-0"
-        />
-      </button>
+      <div className="w-full flex justify-center space-x-[10px] mt-[10px]">
+        {projects.map((_, i) => (
+          <div
+            className={
+              getIndex(position) === i
+                ? "w-[30px] h-[5px] bg-gray-400"
+                : "w-[30px] h-[5px] bg-gray-300"
+            }
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
