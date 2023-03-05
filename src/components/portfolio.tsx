@@ -104,8 +104,8 @@ export const Portfolio = () => {
             key={`indicator_${i}`}
             className={
               projects.length - 1 - getIndex(position + 1) === i
-                ? "w-[30px] h-[5px] bg-gray-400"
-                : "w-[30px] h-[5px] bg-gray-300"
+                ? "w-[10px] h-[10px] bg-gray-400 rounded-sm"
+                : "w-[10px] h-[10px] bg-gray-300 rounded-sm"
             }
           ></div>
         ))}
