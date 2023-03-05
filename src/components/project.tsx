@@ -8,7 +8,7 @@ interface Props {
 
 export const Project = ({ data: { tags, title, text } }: Props) => {
   return (
-    <div className="w-full h-[300px] min-w-0 shadow p-[30px] rounded-[10px] border-[2px] space-y-[20px]">
+    <div className="bg-white w-full h-[300px] min-w-0 shadow p-[30px] rounded-[10px] border-[2px] space-y-[20px]">
       <div className="flex space-x-[10px]">
         {tags.map((t) => (
           <Tag text={t} key={t} />

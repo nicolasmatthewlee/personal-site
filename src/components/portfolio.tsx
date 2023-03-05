@@ -25,7 +25,8 @@ export const Portfolio = () => {
     },
   ];
 
-  const [position, setPosition] = useState<number>(0);
+  const [position, setPosition] = useState<number>(1);
+  const [moveDirection, setMoveDirection] = useState<"right" | "left">();
 
   const getIndex = (n: number) => {
     return (n + projects.length) % projects.length;
@@ -33,38 +34,76 @@ export const Portfolio = () => {
 
   return (
     <div>
-      <div className="flex items-center w-full">
-        <button onClick={() => setPosition(position + projects.length - 1)}>
+      <div className="flex w-full h-[300px] relative">
+        <button
+          onClick={() => {
+            setPosition(position + 1);
+            setMoveDirection("right");
+          }}
+          className="z-20 pl-[30px] text-gray-300 hover:text-gray-400"
+        >
           <FontAwesomeIcon
             icon={faLongArrowAltLeft}
-            className="text-gray-300 hover:text-gray-400 p-[20px] pl-0"
+            className="p-[20px] pl-0"
           />
         </button>
 
-        <div className="flex space-x-[30px]">
-          <div>
-            <Project data={projects[getIndex(position)]} />
-          </div>
-          <div className="hidden md:inline">
-            <Project data={projects[getIndex(position + 1)]} />
-          </div>
-          <div className="hidden xl:inline">
-            <Project data={projects[getIndex(position + 2)]} />
-          </div>
+        {/* Projects */}
+        <div className="flex relative flex-1">
+          {projects.map((p, i) => (
+            <div
+              key={`project${i}`}
+              className={
+                `px-[10px] bg-white absolute translate-x-[${
+                  getIndex(position + i) * 100 - 100
+                }%] transition-all duration-[500ms]` +
+                // if looping around, go behind other elements
+                (getIndex(position + i) === 1
+                  ? " z-20"
+                  : (moveDirection === "right" &&
+                      getIndex(position + i) === 0) ||
+                    (moveDirection === "left" &&
+                      getIndex(position + i) === projects.length - 1)
+                  ? " z-0"
+                  : " z-10")
+              }
+            >
+              {/* Separate div to hold projects so project content can be lightened without making
+              the background transparent */}
+              <div
+                className={
+                  "duration-[500ms]" +
+                  // if not being shown, set opacity
+                  (getIndex(position + i) === 1
+                    ? ""
+                    : " transition-opacity opacity-[30%]")
+                }
+              >
+                <Project data={p} />
+              </div>
+            </div>
+          ))}
         </div>
 
-        <button onClick={() => setPosition(position + 1)}>
+        <button
+          onClick={() => {
+            setPosition(position + projects.length - 1);
+            setMoveDirection("left");
+          }}
+          className="z-20 pr-[30px] text-gray-300 hover:text-gray-400"
+        >
           <FontAwesomeIcon
             icon={faLongArrowAltRight}
-            className="text-gray-300 hover:text-gray-400 p-[20px] pr-0"
+            className=" p-[20px] pr-0"
           />
         </button>
       </div>
       <div className="w-full flex justify-center space-x-[10px] mt-[10px]">
         {projects.map((_, i) => (
           <div
+            key={`indicator_${i}`}
             className={
-              getIndex(position) === i
+              projects.length - 1 - getIndex(position + 1) === i
                 ? "w-[30px] h-[5px] bg-gray-400"
                 : "w-[30px] h-[5px] bg-gray-300"
             }
