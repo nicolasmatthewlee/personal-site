@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="overflow-x-hidden">
       <Header />
-      <div id="top" className="py-[30px] pt-[120px] pb-[60px] space-y-[60px]">
+      <div id="top" className="py-[30px] pt-[120px] pb-[30px] space-y-[60px]">
         <Title />
         <Portfolio />
         <Footer />

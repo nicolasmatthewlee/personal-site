@@ -11,7 +11,9 @@ export const Title = () => {
       lg:absolute lg:left-[30px] lg:top-[150px] lg:px-[5%]"
       >
         <h1 className="text-5xl font-medium">Nicolas Lee</h1>
-        <h1 className="text-5xl text-gray-600">Full stack developer</h1>
+        <h1 className="text-5xl text-gray-600 relative">
+          Full stack developer
+        </h1>
       </div>
       <div className="flex justify-center">
         <img
