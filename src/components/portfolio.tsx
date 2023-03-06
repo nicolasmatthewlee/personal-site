@@ -7,6 +7,8 @@ import { Project } from "./project";
 import { useState } from "react";
 
 export const Portfolio = () => {
+  // NOTE: IF UPDATING PROJECTS, MUST ADD ADDITIONAL TAILWIND CLASSES BELOW
+  // translate-x-[100%] translate-x-[-100%]
   const projects: { tags: string[]; title: string; text: string }[] = [
     {
       tags: ["TypeScript", "Feb 28 2023"],
@@ -49,7 +51,7 @@ export const Portfolio = () => {
         </button>
 
         {/* Projects */}
-        <div className="flex relative flex-1">
+        <div className="flex relative flex-1 overflow-visible">
           {projects.map((p, i) => (
             <div
               key={`project${i}`}

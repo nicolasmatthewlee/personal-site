@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   return (
-    <div className="bg-white h-[60px] fixed shadow w-full flex items-center space-x-[30px] px-[30px] py-[10px] text-sm tracking-wide">
+    <div className="bg-white h-[60px] fixed shadow w-full flex items-center space-x-[30px] px-[30px] py-[10px] text-sm tracking-wide z-50">
       <h1 className="flex-1">NICOLAS LEE</h1>
       <div className="flex items-center space-x-[10px]">
         <FontAwesomeIcon icon={faFolderOpen} />
