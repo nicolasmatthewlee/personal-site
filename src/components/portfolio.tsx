@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export const Portfolio = () => {
   // NOTE: IF UPDATING PROJECTS, MUST ADD ADDITIONAL TAILWIND CLASSES BELOW
-  // translate-x-[100%] translate-x-[-100%]
+  // translate-x-[100%] translate-x-[-100%] translate-x-[-200%] translate-x-[200%]
   const projects: { tags: string[]; title: string; text: string }[] = [
     {
       tags: ["TypeScript", "Feb 28 2023"],
@@ -23,6 +23,11 @@ export const Portfolio = () => {
     {
       tags: ["JavaScript", "Feb 28 2023"],
       title: "Item 3",
+      text: "How to develop an application with MongoDB, express, react, and node.js.",
+    },
+    {
+      tags: ["JavaScript", "Feb 28 2023"],
+      title: "Item 4",
       text: "How to develop an application with MongoDB, express, react, and node.js.",
     },
   ];
