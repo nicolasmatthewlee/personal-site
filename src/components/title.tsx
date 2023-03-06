@@ -1,4 +1,4 @@
-import PROFILE from "../assets/placeholder-standing.jpg";
+import PROFILE from "../assets/placeholder.jpg";
 
 export const Title = () => {
   return (
@@ -8,7 +8,11 @@ export const Title = () => {
         <h1 className="text-5xl text-gray-600">Full stack developer</h1>
       </div>
       <div className="flex justify-center">
-        <img src={PROFILE} alt="nicolas lee" className="rounded object-fit" />
+        <img
+          src={PROFILE}
+          alt="nicolas lee"
+          className="rounded object-fit w-[330px] shadow"
+        />
       </div>
     </div>
   );

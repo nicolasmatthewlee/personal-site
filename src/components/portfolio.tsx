@@ -35,7 +35,7 @@ export const Portfolio = () => {
   };
 
   return (
-    <div>
+    <div id="portfolio">
       <div className="flex w-full h-[300px] relative">
         <button
           onClick={() => {
