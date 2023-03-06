@@ -56,7 +56,7 @@ export const Portfolio = () => {
             <div
               key={`project${i}`}
               className={
-                `px-[10px] bg-white absolute translate-x-[${
+                `w-full md:w-1/2 xl:w-1/3 px-[10px] bg-white absolute translate-x-[${
                   getIndex(position + i) * 100 - 100
                 }%] transition-all duration-[500ms]` +
                 // if looping around, go behind other elements

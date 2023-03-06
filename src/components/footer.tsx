@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="text-[18px] flex flex-1 items-center text-gray-600">
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="mr-[10px] text-[15px] text-gray-800"
+            className="mr-[10px] text-[15px] text-gray-800 pt-[2px]"
           />
           <a href="mailto:nicolasmatthewlee@gmail.com">
             nicolasmatthewlee@gmail.com
