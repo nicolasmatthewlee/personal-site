@@ -12,11 +12,17 @@ export const Footer = () => {
             icon={faEnvelope}
             className="mr-[10px] text-[15px] text-gray-800"
           />
-          nicolasmatthewlee@gmail.com
+          <a href="mailto:nicolasmatthewlee@gmail.com">
+            nicolasmatthewlee@gmail.com
+          </a>
         </div>
         <div className="space-x-[10px]">
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href="https://github.com/nicolasmatthewlee">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-matthew-lee">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
       </div>
     </div>
