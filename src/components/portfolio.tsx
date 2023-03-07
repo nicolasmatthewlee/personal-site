@@ -9,26 +9,35 @@ import { useState } from "react";
 export const Portfolio = () => {
   // NOTE: IF UPDATING PROJECTS, MUST ADD ADDITIONAL TAILWIND CLASSES BELOW
   // translate-x-[100%] translate-x-[-100%] translate-x-[-200%] translate-x-[200%]
-  const projects: { tags: string[]; title: string; text: string }[] = [
+  const projects: {
+    tags: string[];
+    title: string;
+    text: string;
+    link: string;
+  }[] = [
     {
-      tags: ["TypeScript", "Feb 28 2023"],
-      title: "Developing a MERN blog application.",
-      text: "How to develop an application with MongoDB, express, react, and node.js.",
+      tags: ["JavaScript", "Jan 24 2023"],
+      title: "Healthcare Site",
+      text: "ERN application for a healthcare practice. Deployed with DigitalOcean IaaS.",
+      link: "/portfolio/healthcare-site",
     },
     {
       tags: ["JavaScript", "Feb 28 2023"],
       title: "Item 2",
       text: "How to develop an application with MongoDB, express, react, and node.js.",
+      link: "",
     },
     {
       tags: ["JavaScript", "Feb 28 2023"],
       title: "Item 3",
       text: "How to develop an application with MongoDB, express, react, and node.js.",
+      link: "",
     },
     {
       tags: ["JavaScript", "Feb 28 2023"],
       title: "Item 4",
       text: "How to develop an application with MongoDB, express, react, and node.js.",
+      link: "",
     },
   ];
 
