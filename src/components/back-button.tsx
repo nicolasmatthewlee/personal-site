@@ -9,7 +9,7 @@ interface Props {
 export const BackButton = ({ to }: Props) => {
   return (
     <HashLink to={to}>
-      <button className="px-[10px] py-[2px]">
+      <button className="px-[10px] py-[2px] hover:underline text-gray-500">
         <FontAwesomeIcon
           icon={faLongArrowAltLeft}
           className="mr-[5px]"

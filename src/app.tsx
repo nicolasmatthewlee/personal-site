@@ -15,6 +15,9 @@ function App() {
           element={<HealthcareSite />}
         ></Route>
       </Routes>
+      <div className="bg-black text-white text-xs py-[5px] px-[30px]">
+        Copyright © 2023 Nicolas Lee
+      </div>
     </div>
   );
 }
