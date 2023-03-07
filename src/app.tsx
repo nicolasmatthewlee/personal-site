@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { HealthcareSite } from "./components/healthcare-site";
+import { InventoryApplication } from "./components/inventory-application";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <Route
           path="/portfolio/healthcare-site"
           element={<HealthcareSite />}
+        ></Route>
+        <Route
+          path="/portfolio/inventory-application"
+          element={<InventoryApplication />}
         ></Route>
       </Routes>
       <div className="bg-black text-white text-xs py-[5px] px-[30px]">

@@ -5,13 +5,14 @@ import {
   faReact,
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
-import expressIcon from "../assets/icons/express.svg";
 import { BackButton } from "./back-button";
-import IMAGE_SM from "../assets/healthcare-site/healthcare-site-sm.png";
-import IMAGE_MD from "../assets/healthcare-site/healthcare-site-md.png";
-import IMAGE_LG from "../assets/healthcare-site/healthcare-site-lg.png";
+import expressIcon from "../assets/icons/express.svg";
+import mongodbIcon from "../assets/icons/mongodb.svg";
+import IMAGE_INVENTORY from "../assets/inventory-application/inventory.png";
+import IMAGE_INVENTORY_ADD from "../assets/inventory-application/inventory-add.png";
+import IMAGE_INVENTORY_UPDATE from "../assets/inventory-application/inventory-update.png";
 
-export const HealthcareSite = () => {
+export const InventoryApplication = () => {
   return (
     <div
       className="pt-[90px] pb-[30px] px-[30px] flex flex-col space-y-[45px] text-gray-800
@@ -21,30 +22,14 @@ export const HealthcareSite = () => {
 
       <div className="flex flex-col space-y-[30px]">
         <h1 className="uppercase text-3xl font-medium tracking-wide">
-          healthcare site
+          Inventory Application
         </h1>
-        <div className="flex justify-center sm:space-x-[30px] md:space-x-[30px]">
-          <div className="hidden sm:inline flex-1 max-h-[600px] overflow-scroll shadow">
-            <img
-              className="object-scale-down"
-              src={IMAGE_SM}
-              alt="healthcare website on small viewport"
-            />
-          </div>
-          <div className="hidden md:inline flex-1 max-h-[600px] overflow-scroll shadow">
-            <img
-              className="object-scale-down"
-              src={IMAGE_MD}
-              alt="healthcare website on medium viewport"
-            />
-          </div>
-          <div className="flex-1 max-h-[600px] overflow-scroll shadow">
-            <img
-              className="object-scale-down"
-              src={IMAGE_LG}
-              alt="healthcare website on large viewport"
-            />
-          </div>
+        <div className="shadow">
+          <img
+            className="object-scale-down"
+            src={IMAGE_INVENTORY}
+            alt="inventory application"
+          />
         </div>
       </div>
 
@@ -53,9 +38,10 @@ export const HealthcareSite = () => {
           features
         </h1>
         <ul className="list-disc ml-[17px]">
-          <li>responsive design</li>
-          <li>form validation</li>
-          <li>automated email response</li>
+          <li>create new items</li>
+          <li>create new categories</li>
+          <li>update existing items</li>
+          <li>delete items</li>
         </ul>
       </div>
 
@@ -66,13 +52,13 @@ export const HealthcareSite = () => {
           <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
           <img className="h-[16px] stroke-5" src={expressIcon} alt="" />
-
+          <img className="h-[16px] stroke-5" src={mongodbIcon} alt="" />
           <FontAwesomeIcon icon={faDigitalOcean}></FontAwesomeIcon>
         </div>
       </div>
 
       <div className="pb-[30px]">
-        <a href="http://24.199.116.13/">
+        <a href="http://24.199.116.13:3000/">
           <button className="hover:underline">view live</button>
         </a>
       </div>

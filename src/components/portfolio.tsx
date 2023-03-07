@@ -22,10 +22,10 @@ export const Portfolio = () => {
       link: "/portfolio/healthcare-site",
     },
     {
-      tags: ["JavaScript", "Feb 28 2023"],
-      title: "Item 2",
-      text: "How to develop an application with MongoDB, express, react, and node.js.",
-      link: "",
+      tags: ["JavaScript", "Jan 29 2023"],
+      title: "Inventory Application",
+      text: "MERN inventory application with CRUD operations.",
+      link: "/portfolio/inventory-application",
     },
     {
       tags: ["JavaScript", "Feb 28 2023"],
