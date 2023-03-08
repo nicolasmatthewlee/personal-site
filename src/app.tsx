@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { HealthcareSite } from "./components/healthcare-site";
 import { InventoryApplication } from "./components/inventory-application";
+import { MessageBoard } from "./components/message-board";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route
           path="/portfolio/inventory-application"
           element={<InventoryApplication />}
+        ></Route>
+        <Route
+          path="/portfolio/message-board"
+          element={<MessageBoard />}
         ></Route>
       </Routes>
       <div className="bg-black text-white text-xs py-[5px] px-[30px]">

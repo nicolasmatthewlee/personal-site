@@ -9,8 +9,6 @@ import { BackButton } from "./back-button";
 import expressIcon from "../assets/icons/express.svg";
 import mongodbIcon from "../assets/icons/mongodb.svg";
 import IMAGE_INVENTORY from "../assets/inventory-application/inventory.png";
-import IMAGE_INVENTORY_ADD from "../assets/inventory-application/inventory-add.png";
-import IMAGE_INVENTORY_UPDATE from "../assets/inventory-application/inventory-update.png";
 
 export const InventoryApplication = () => {
   return (
@@ -51,8 +49,12 @@ export const InventoryApplication = () => {
           <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
-          <img className="h-[16px] stroke-5" src={expressIcon} alt="" />
-          <img className="h-[16px] stroke-5" src={mongodbIcon} alt="" />
+          <img
+            className="h-[16px] stroke-5"
+            src={expressIcon}
+            alt="expressjs"
+          />
+          <img className="h-[16px] stroke-5" src={mongodbIcon} alt="mongodb" />
           <FontAwesomeIcon icon={faDigitalOcean}></FontAwesomeIcon>
         </div>
       </div>

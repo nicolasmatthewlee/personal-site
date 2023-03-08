@@ -65,7 +65,11 @@ export const HealthcareSite = () => {
           <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
-          <img className="h-[16px] stroke-5" src={expressIcon} alt="" />
+          <img
+            className="h-[16px] stroke-5"
+            src={expressIcon}
+            alt="expressjs"
+          />
 
           <FontAwesomeIcon icon={faDigitalOcean}></FontAwesomeIcon>
         </div>
