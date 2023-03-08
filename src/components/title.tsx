@@ -1,4 +1,4 @@
-import IMAGE from "../assets/header.png";
+import IMAGE from "../assets/bitmap.png";
 
 export const Title = () => {
   return (
