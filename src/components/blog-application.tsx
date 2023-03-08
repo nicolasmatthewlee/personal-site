@@ -4,17 +4,15 @@ import {
   faDigitalOcean,
   faNodeJs,
   faReact,
-  faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
+import tailwindIcon from "../assets/icons/tailwind.svg";
 import expressIcon from "../assets/icons/express.svg";
 import mongodbIcon from "../assets/icons/mongodb.svg";
 import passportIcon from "../assets/icons/passport.png";
+import jestIcon from "../assets/icons/jest.svg";
+import IMAGE_HOME from "../assets/blog-application/blog-application-home.png";
 
-import IMAGE_UNREGISTERED from "../assets/message-board/message-board-unregistered-user.png";
-import IMAGE_REGISTERED from "../assets/message-board/message-board-registered-user.png";
-import IMAGE_ADMIN from "../assets/message-board/message-board-admin.png";
-
-export const MessageBoard = () => {
+export const BlogApplication = () => {
   return (
     <div
       className="pt-[90px] pb-[30px] px-[30px] flex flex-col space-y-[45px] text-gray-800
@@ -24,53 +22,10 @@ export const MessageBoard = () => {
 
       <div className="flex flex-col space-y-[30px]">
         <h1 className="uppercase text-3xl font-medium tracking-wide">
-          message board
+          blog application
         </h1>
-        <div
-          className="flex flex-col w-full 
-          sm:flex-row"
-        >
-          <div
-            className="flex-1 hidden pr-[30px] 
-          md:inline"
-          >
-            <img
-              src={IMAGE_UNREGISTERED}
-              alt="message board for unregistered user"
-            />
-            <p
-              className="text-center
-            sm:text-xs xl:text-base"
-            >
-              unregistered user
-            </p>
-          </div>
-          <div className="flex-1 flex flex-col items-center">
-            <img
-              src={IMAGE_REGISTERED}
-              alt="message board for unregistered user"
-              className="max-w-[400px] 
-              sm:max-w-full"
-            />
-            <p
-              className="text-center hidden
-            sm:inline sm:text-xs xl:text-base"
-            >
-              registered user
-            </p>
-          </div>
-          <div
-            className="flex-1 hidden pl-[30px]
-          sm:inline"
-          >
-            <img src={IMAGE_ADMIN} alt="message board for unregistered user" />
-            <p
-              className="text-center
-            sm:text-xs xl:text-base"
-            >
-              admin user
-            </p>
-          </div>
+        <div className="shadow">
+          <img src={IMAGE_HOME} alt="blog homepage" />
         </div>
       </div>
 
@@ -81,8 +36,10 @@ export const MessageBoard = () => {
         <ul className="list-disc ml-[17px]">
           <li>account creation and login</li>
           <li>session persistence with cookies</li>
-          <li>message posting</li>
-          <li>account tiers with privileges</li>
+          <li>write and publish articles</li>
+          <li>save articles</li>
+          <li>notifications for posts liked</li>
+          <li>testing suite with Jest, SuperTest</li>
           <li>database protected with password hashing</li>
         </ul>
       </div>
@@ -91,7 +48,11 @@ export const MessageBoard = () => {
         <h1 className="uppercase text-3xl font-medium tracking-wide">stack</h1>
         <div className="flex space-x-[10px]">
           <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faBootstrap}></FontAwesomeIcon>
+          <img
+            className="h-[16px] stroke-5"
+            src={tailwindIcon}
+            alt="tailwind"
+          />
           <FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
           <img
             className="h-[16px] stroke-5"
@@ -103,13 +64,14 @@ export const MessageBoard = () => {
             src={passportIcon}
             alt="passportjs"
           />
+          <img className="h-[16px] stroke-5" src={jestIcon} alt="jestjs" />
           <img className="h-[16px] stroke-5" src={mongodbIcon} alt="mongodb" />
           <FontAwesomeIcon icon={faDigitalOcean}></FontAwesomeIcon>
         </div>
       </div>
 
       <div className="pb-[30px]">
-        <a href="http://24.199.116.13:2000/">
+        <a href="http://24.199.116.13:5001/">
           <button className="hover:underline">view live</button>
         </a>
       </div>

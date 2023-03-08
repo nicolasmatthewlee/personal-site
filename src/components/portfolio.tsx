@@ -16,16 +16,16 @@ export const Portfolio = () => {
     link: string;
   }[] = [
     {
+      tags: ["TypeScript", "Feb 28 2023"],
+      title: "Blog Application",
+      text: "Full-stack MERN blog application. Tested with Jest/Supertest.",
+      link: "/portfolio/blog-application",
+    },
+    {
       tags: ["JavaScript", "Jan 24 2023"],
       title: "Healthcare Site",
       text: "ERN application for a healthcare practice. Deployed with DigitalOcean IaaS.",
       link: "/portfolio/healthcare-site",
-    },
-    {
-      tags: ["JavaScript", "Jan 29 2023"],
-      title: "Inventory Application",
-      text: "MERN inventory application with CRUD operations.",
-      link: "/portfolio/inventory-application",
     },
     {
       tags: ["JavaScript", "Feb 5 2023"],
@@ -34,10 +34,10 @@ export const Portfolio = () => {
       link: "/portfolio/message-board",
     },
     {
-      tags: ["JavaScript", "Feb 28 2023"],
-      title: "Item 4",
-      text: "How to develop an application with MongoDB, express, react, and node.js.",
-      link: "",
+      tags: ["JavaScript", "Jan 29 2023"],
+      title: "Inventory Application",
+      text: "MERN inventory application with CRUD operations.",
+      link: "/portfolio/inventory-application",
     },
   ];
 
