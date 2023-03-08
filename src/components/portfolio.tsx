@@ -89,9 +89,13 @@ export const Portfolio = () => {
               <div
                 className={
                   "duration-[500ms]" +
-                  // if not being shown, set opacity
+                  // if not being shown, set opacity depending on cols
                   (getIndex(position + i) === 1
                     ? ""
+                    : getIndex(position + i) === 2
+                    ? " transition-opacity opacity-[30%] sm:opacity-100"
+                    : getIndex(position + i) === 3
+                    ? " transition-opacity opacity-[30%] xl:opacity-100"
                     : " transition-opacity opacity-[30%]")
                 }
               >
@@ -119,7 +123,7 @@ export const Portfolio = () => {
           <div
             key={`indicator_${i}`}
             className={
-              projects.length - 1 - getIndex(position + 1) === i
+              projects.length - 1 - getIndex(position + 2) === i
                 ? "w-[10px] h-[10px] bg-gray-400 rounded-sm"
                 : "w-[10px] h-[10px] bg-gray-300 rounded-sm"
             }
