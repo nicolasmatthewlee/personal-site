@@ -22,9 +22,9 @@ export const InventoryApplication = () => {
         <h1 className="uppercase text-3xl font-medium tracking-wide">
           Inventory Application
         </h1>
-        <div className="shadow">
+        <div className="shadow w-full pt-[55%] relative bg-gray-100">
           <img
-            className="object-scale-down"
+            className="object-scale-down absolute top-0 h-full w-full"
             src={IMAGE_INVENTORY}
             alt="inventory application"
           />

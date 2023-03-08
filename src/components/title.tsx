@@ -16,11 +16,16 @@ export const Title = () => {
         </h1>
       </div>
       <div className="flex justify-center">
-        <img
-          src={IMAGE}
-          alt="nicolas lee"
-          className="rounded object-fit max-w-[330px] shadow opacity-90"
-        />
+        <div
+          className="w-[330px] pt-[248px] bg-gray-100 rounded relative
+        lg:pt-[75%]"
+        >
+          <img
+            src={IMAGE}
+            alt="nicolas lee"
+            className="rounded w-full h-full opacity-90 absolute top-0"
+          />
+        </div>
       </div>
     </div>
   );

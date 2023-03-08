@@ -24,8 +24,12 @@ export const BlogApplication = () => {
         <h1 className="uppercase text-3xl font-medium tracking-wide">
           blog application
         </h1>
-        <div className="shadow">
-          <img src={IMAGE_HOME} alt="blog homepage" />
+        <div className="shadow w-full pt-[56%] relative bg-gray-100">
+          <img
+            className="absolute top-0 h-full w-full"
+            src={IMAGE_HOME}
+            alt="blog homepage"
+          />
         </div>
       </div>
 

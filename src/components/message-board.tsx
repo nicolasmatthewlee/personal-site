@@ -46,12 +46,14 @@ export const MessageBoard = () => {
             </p>
           </div>
           <div className="flex-1 flex flex-col items-center">
-            <img
-              src={IMAGE_REGISTERED}
-              alt="message board for unregistered user"
-              className="max-w-[400px] 
-              sm:max-w-full"
-            />
+            <div className="w-full pt-[170%] bg-gray-100 relative">
+              <img
+                src={IMAGE_REGISTERED}
+                alt="message board for unregistered user"
+                className="max-w-[400px] absolute top-0
+                sm:max-w-full"
+              />
+            </div>
             <p
               className="text-center hidden
             sm:inline sm:text-xs xl:text-base"

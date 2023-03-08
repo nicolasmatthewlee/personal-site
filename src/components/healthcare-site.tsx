@@ -24,21 +24,21 @@ export const HealthcareSite = () => {
           healthcare site
         </h1>
         <div className="flex justify-center sm:space-x-[30px] md:space-x-[30px]">
-          <div className="hidden sm:inline flex-1 max-h-[600px] overflow-scroll shadow">
+          <div className="hidden sm:inline flex-1 h-[600px] overflow-scroll shadow bg-gray-100">
             <img
               className="object-scale-down"
               src={IMAGE_SM}
               alt="healthcare website on small viewport"
             />
           </div>
-          <div className="hidden md:inline flex-1 max-h-[600px] overflow-scroll shadow">
+          <div className="hidden md:inline flex-1 h-[600px] overflow-scroll shadow bg-gray-100">
             <img
               className="object-scale-down"
               src={IMAGE_MD}
               alt="healthcare website on medium viewport"
             />
           </div>
-          <div className="flex-1 max-h-[600px] overflow-scroll shadow">
+          <div className="flex-1 h-[600px] overflow-scroll shadow bg-gray-100">
             <img
               className="object-scale-down"
               src={IMAGE_LG}
