@@ -4,12 +4,18 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
-    <div className="px-[60px] sm:px-[75px]" id="contact">
-      <h2 className="text-[24px] font-bold text-gray-800">
+    <div className="px-[30px] sm:px-[75px]" id="contact">
+      <h2
+        className="text-[20px] font-bold text-gray-800
+      sm:text-[24px]"
+      >
         Want to get in touch?
       </h2>
       <div className="flex">
-        <div className="text-[16px] sm:text-[18px] flex flex-1 items-center text-gray-600">
+        <div
+          className="text-[14px] sm:text-[18px] flex flex-1 items-center text-gray-600
+        sm:text-[16px]"
+        >
           <FontAwesomeIcon
             icon={faEnvelope}
             className="mr-[10px] text-[15px] text-gray-800 pt-[2px]"

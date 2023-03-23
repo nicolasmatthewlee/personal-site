@@ -56,11 +56,13 @@ export const Portfolio = () => {
             setPosition(position + 1);
             setMoveDirection("right");
           }}
-          className="z-20 pl-[30px] text-gray-300 hover:text-gray-400"
+          className="z-20 pl-[15px] text-gray-300 hover:text-gray-400
+          sm:pl-[30px]"
         >
           <FontAwesomeIcon
             icon={faLongArrowAltLeft}
-            className="p-[20px] pl-0"
+            className="p-[5px] pl-0
+            sm:p-[20px]"
           />
         </button>
 
@@ -93,7 +95,7 @@ export const Portfolio = () => {
                   (getIndex(position + i) === 1
                     ? ""
                     : getIndex(position + i) === 2
-                    ? " transition-opacity opacity-[30%] sm:opacity-100"
+                    ? " transition-opacity opacity-[30%] md:opacity-100"
                     : getIndex(position + i) === 3
                     ? " transition-opacity opacity-[30%] xl:opacity-100"
                     : " transition-opacity opacity-[30%]")
@@ -110,11 +112,13 @@ export const Portfolio = () => {
             setPosition(position + projects.length - 1);
             setMoveDirection("left");
           }}
-          className="z-20 pr-[30px] text-gray-300 hover:text-gray-400"
+          className="z-20 pr-[15px] text-gray-300 hover:text-gray-400
+          sm:pr-[30px]"
         >
           <FontAwesomeIcon
             icon={faLongArrowAltRight}
-            className=" p-[20px] pr-0"
+            className=" p-[5px] pr-0
+            sm:p-[20px]"
           />
         </button>
       </div>

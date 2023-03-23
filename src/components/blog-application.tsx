@@ -21,7 +21,10 @@ export const BlogApplication = () => {
       <BackButton to="/#portfolio" />
 
       <div className="flex flex-col space-y-[30px]">
-        <h1 className="uppercase text-3xl font-medium tracking-wide">
+        <h1
+          className="uppercase text-xl font-medium tracking-wide
+        md:text-2xl"
+        >
           blog application
         </h1>
         <div className="shadow w-full pt-[56%] relative bg-gray-100">
@@ -34,7 +37,10 @@ export const BlogApplication = () => {
       </div>
 
       <div className="flex flex-col space-y-[5px] pt-[15px]">
-        <h1 className="uppercase text-3xl font-medium tracking-wide">
+        <h1
+          className="uppercase text-xl font-medium tracking-wide
+        md:text-2xl"
+        >
           features
         </h1>
         <ul className="list-disc ml-[17px]">
@@ -49,7 +55,12 @@ export const BlogApplication = () => {
       </div>
 
       <div className="flex flex-col space-y-[10px]">
-        <h1 className="uppercase text-3xl font-medium tracking-wide">stack</h1>
+        <h1
+          className="uppercase text-xl font-medium tracking-wide
+        md:text-2xl"
+        >
+          stack
+        </h1>
         <div className="flex space-x-[10px]">
           <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
           <img

@@ -16,7 +16,7 @@ export const Project = ({ data: { tags, title, text, link } }: Props) => {
             <Tag text={t} key={t} />
           ))}
         </div>
-        <h1 className="text-lg font-bold line-clamp-2">{title}</h1>
+        <h1 className="text-lg font-bold truncate">{title}</h1>
         <h2 className="line-clamp-3">{text}</h2>
       </div>
       <HashLink smooth={false} to={link + "/#"}>
