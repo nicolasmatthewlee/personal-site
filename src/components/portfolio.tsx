@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export const Portfolio = () => {
   // NOTE: IF UPDATING PROJECTS, MUST ADD ADDITIONAL TAILWIND CLASSES BELOW
-  // translate-x-[100%] translate-x-[-100%] translate-x-[-200%] translate-x-[200%]
+  // translate-x-[100%] translate-x-[-100%] translate-x-[-200%] translate-x-[200%] translate-x-[-300%] translate-x-[300%]
   const projects: {
     tags: string[];
     title: string;

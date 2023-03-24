@@ -1,5 +1,6 @@
 import { Title } from "./title";
 import { Portfolio } from "./portfolio";
+import { NewPortfolio } from "./new-portfolio";
 import { Footer } from "./footer";
 
 export const Home = () => {
