@@ -16,9 +16,15 @@ export const Portfolio = () => {
     link: string;
   }[] = [
     {
+      tags: ["TypeScript", "Mar 22 2023"],
+      title: "FoodStats.net",
+      text: "Full stack ERN web app for retrieving and visualizing nutritional information.",
+      link: "/portfolio/foodstats",
+    },
+    {
       tags: ["TypeScript", "Feb 28 2023"],
       title: "Blog Application",
-      text: "Full-stack MERN blog application. Tested with Jest/Supertest.",
+      text: "Full stack MERN blog application. Tested with Jest/Supertest.",
       link: "/portfolio/blog-application",
     },
     {
@@ -127,7 +133,7 @@ export const Portfolio = () => {
           <div
             key={`indicator_${i}`}
             className={
-              projects.length - 1 - getIndex(position + 2) === i
+              projects.length - 1 - getIndex(position + 3) === i
                 ? "w-[10px] h-[10px] bg-gray-400 rounded-sm"
                 : "w-[10px] h-[10px] bg-gray-300 rounded-sm"
             }

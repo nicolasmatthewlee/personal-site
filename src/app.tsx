@@ -6,6 +6,7 @@ import { HealthcareSite } from "./components/healthcare-site";
 import { InventoryApplication } from "./components/inventory-application";
 import { MessageBoard } from "./components/message-board";
 import { BlogApplication } from "./components/blog-application";
+import { FoodStats } from "./components/foodstats";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           path="/portfolio/blog-application"
           element={<BlogApplication />}
         ></Route>
+        <Route path="/portfolio/foodstats" element={<FoodStats />}></Route>
       </Routes>
       <div className="bg-black text-white text-xs py-[5px] px-[30px]">
         Copyright © 2023 Nicolas Lee
