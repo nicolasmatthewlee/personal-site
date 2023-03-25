@@ -56,14 +56,16 @@ export const Portfolio = () => {
 
   return (
     <div id="portfolio">
-      <div className="flex w-full h-[300px] relative">
+      <div
+        className="flex w-full h-[300px] relative px-[35px]
+      sm:px-[55px]"
+      >
         <button
           onClick={() => {
             setPosition(position + 1);
             setMoveDirection("right");
           }}
-          className="z-20 pl-[15px] text-gray-300 hover:text-gray-400
-          sm:pl-[30px]"
+          className="left-0 h-full absolute z-30 px-[15px] text-gray-300 hover:text-gray-400"
         >
           <FontAwesomeIcon
             icon={faLongArrowAltLeft}
@@ -118,8 +120,7 @@ export const Portfolio = () => {
             setPosition(position + projects.length - 1);
             setMoveDirection("left");
           }}
-          className="z-20 pr-[15px] text-gray-300 hover:text-gray-400
-          sm:pr-[30px]"
+          className="h-full right-0 absolute z-30 p-[15px] text-gray-300 hover:text-gray-400"
         >
           <FontAwesomeIcon
             icon={faLongArrowAltRight}
