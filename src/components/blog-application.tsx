@@ -86,8 +86,8 @@ export const BlogApplication = () => {
       </div>
 
       <div className="pb-[30px]">
-        <a href="http://24.199.116.13:5001/">
-          <button className="hover:underline">view live</button>
+        <a href="https://github.com/nicolasmatthewlee/blog-client">
+          <button className="hover:underline">view source</button>
         </a>
       </div>
 
